@@ -301,7 +301,7 @@ def _system3(cmd, verbose=False):
         #print("thread exit")
     
     # Start process that runs the command
-    p = subprocess.Popen(cmd, shell=True, 
+    p = subprocess.Popen(cmd, shell=False, 
                          stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     
     # Keep reading stdout from it
